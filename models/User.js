@@ -1,11 +1,9 @@
-// Import important parts of sequelize library.
 const { Model, DataTypes } = require('sequelize');
-
-// Import our database connection from config.js
 const sequelize = require('../config/connection.js');
 
 // Use bcrypt for passwrd hashing
 const bcrypt = require('bcrypt');
+
 
 // Set up fields and rules for Comment model.
 class User extends Model {
@@ -30,22 +28,15 @@ User.init(
             allowNull: false,
             unique: true,
         },
-        email: {
+        password: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
             validate: {
-                isEmail: true,
-            },
-            password: {
-                type: DataTypes.STRING,
-                allowNull: false,
-                validate: {
-                    // password must be >=8 characters long.
-                    len: [8],
-                },
+                // password must be >=8 characters long.
+                len: [8],
             },
         },
+
 
         // Set up a beforeCreate & beforeUpdate lifecycle hook to hash password before object created in the database
         hooks: {
