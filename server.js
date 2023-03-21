@@ -3,8 +3,6 @@ const routes = require('./controllers');
 // import sequelize connection
 const sequelize = require('./config/connection');
 
-
-
    
 const { FORCE } = require('sequelize/types/index-hints');
 

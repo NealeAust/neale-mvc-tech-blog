@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection');
 
 // Use bcrypt for passwrd hashing
 const bcrypt = require('bcrypt');
@@ -36,8 +36,8 @@ User.init(
                 len: [8],
             },
         },
-
-
+    },
+{
         // Set up a beforeCreate & beforeUpdate lifecycle hook to hash password before object created in the database
         hooks: {
             beforeCreate: async (newUserData) => {
