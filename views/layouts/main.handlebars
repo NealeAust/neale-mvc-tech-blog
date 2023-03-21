@@ -12,23 +12,35 @@
     <link rel="stylesheet" href="style.css" />
     <title>MVC Tech Blog</title>
 </head>
-  <div class="wrapper">
-    <header>
-        <h>
-            
 
-        </h>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="/">MVC Tech Blog</a>
+            </h1>
+            <nav>
+                <span><a href="/">home</a></span>
+                {{#if loggedIn}}
+                <a href="/dashboard">dashboard</a>
+                <button id="logout" class="btn-no-style">logout</button>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
+            </nav>
+        </header>
+        <main>
+            {{{body}}}
+        </main>
+        <footer>
+            Thankyou for visiting MVC Tech Blog!
+        </footer>
+    </div>
 
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 
-
-
-
-
-
-
-    </header>
-
-    <body>
-        <div class="wr" {{{body}}} </body>
+</body>
 
 </html>
