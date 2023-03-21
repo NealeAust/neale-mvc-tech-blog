@@ -2,7 +2,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 // Import our database connection from config.js
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection');
 
 // Set up fields and rules for Comment model.
 class Post extends Model { }

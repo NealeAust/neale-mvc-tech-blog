@@ -4,7 +4,7 @@ const commentData = [
     {
         user_id: 1,
         post_id: 3,
-        Comment_text: "Linking up Modules, Routes, Seeds, Handlebars etc is challenging."
+        comment_text: "Linking up Modules, Routes, Seeds, Handlebars etc is challenging."
     },
     {
         user_id: 4,

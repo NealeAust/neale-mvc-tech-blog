@@ -32,4 +32,4 @@ foreignKey: 'post_id',
 onDelete: 'CASCADE'
 });
 
-module.exports = {User, Post, Comment};
+module.exports = { User, Post, Comment };

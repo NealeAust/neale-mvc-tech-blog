@@ -27,7 +27,7 @@ Comment.init(
         post_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            refrences: {
+            references: {
                 model: 'post',
                 key: 'id',
             }
@@ -37,7 +37,7 @@ Comment.init(
             allowNull: false,
             validate: {
                 // Comment must be at least one character long.                
-                len: [1],
+                len:[1],
             }
         }
     },
@@ -46,7 +46,9 @@ Comment.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'comment',
-    });
+    }
+    
+    )
 
 // Export the model
 module.exports = Comment;
