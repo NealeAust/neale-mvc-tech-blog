@@ -1,34 +1,38 @@
 [
-{
-    "username": "Alan Smithee ",
-    "password": "Terrestial99$$$"
-},
-{
-    "username": "NealeAust",
-    "password": "bootcampspot"
-},
-{
-    "username": "Mandy Potts",
-    "password": "pokemon4ever72"
-},
-{
-    "username": "Miranda Buff",
-     "password": "vampireslayer"
-},
-{
-    "username": "John Doe",
-    "password": "JohnDoeexpress99"
-},
-{
-    "username": "ThunderbirdsRGo",
-    "password": "Brainsforever23"
-},
-{
-    "username": "Maxine Trooper",
-    "password": "supertrooper"
-},
-{
-    "username": "VandaRock",
-    "password": "Fridayonmymind"
-}
+    {
+        "username": "dragon",
+        "password": "dragon1234"
+    },
+    {
+        "username": "Alan Smithee",
+        "password": "Terrestial99$$$"
+    },
+    {
+        "username": "NealeAust",
+        "password": "bootcampspot"
+    },
+    {
+        "username": "Mandy Potts",
+        "password": "pokemon4ever72"
+    },
+    {
+        "username": "Miranda Buff",
+        "password": "vampireslayer"
+    },
+    {
+        "username": "John Doe",
+        "password": "JohnDoeexpress99"
+    },
+    {
+        "username": "ThunderbirdsRGo",
+        "password": "Brainsforever23"
+    },
+    {
+        "username": "Maxine Trooper",
+        "password": "supertrooper"
+    },
+    {
+        "username": "VandaRock",
+        "password": "Fridayonmymind"
+    }
 ]

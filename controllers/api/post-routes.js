@@ -82,10 +82,11 @@ router.post('/', withAuth, async (req, res) => {
 // Update post.
 router.put('/:id', withAuth, async (req, res) => {
   try {
+    
     const updatedPost = await Post.update(
       {
         title: req.body.title,
-        content: req.body.content,
+        post_text: req.body.post_text,
       },
       {
         where: {
@@ -100,6 +101,7 @@ router.put('/:id', withAuth, async (req, res) => {
 
     res.json(updatedPost);
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });

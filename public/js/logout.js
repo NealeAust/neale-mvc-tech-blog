@@ -9,8 +9,8 @@ async function logout() {
     // Response to fetch received, status checked and applicable message displayed. 
     if (response.ok) {
         alert('Thankyou for visiting Tech Blog!');
-        document.location.replace('/login');
-
+        document.location.replace('/');
+        
     } else {
         alert('Failed to log out, please try again!');
     }
