@@ -23,7 +23,7 @@ async function editFormHandler(event) {
 
     // If response is OK post will be updated, else error will be displayed.
     if (response, ok) {
-        document.location.replace('/dashboard/');
+        document.location.replace('/dashboard');
     } else {
         alert(response.statusText);
     }

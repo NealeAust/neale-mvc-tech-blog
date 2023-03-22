@@ -2,8 +2,8 @@
 
 // Dependencies
 const router = require('express').Router();
-const userRoutes = router('./user-routes');
-const postRoutes = require('/post-routes');
+const userRoutes = require('./user-routes');
+const postRoutes = require('./post-routes');
 const commentRoutes = require('./comment-routes');
 
 // Define route path for API to use.

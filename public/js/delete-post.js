@@ -19,7 +19,7 @@ async function deleteFormHandler(event) {
 
     // If response is OK post will be deleted
     if (response.ok) {
-        document.location.replace('/dashboard/');
+        document.location.replace('/dashboard');
     } else {
         alert(response.statusText);
     }
