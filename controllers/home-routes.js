@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
         ]
     })
     // Render the posts 
-    then(postData => {
+    .then(postData => {
         const posts = postData.map(post => post.get({ plain: true }));
         res.render('homepage', {
             posts,

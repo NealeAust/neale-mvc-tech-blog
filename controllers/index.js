@@ -3,8 +3,8 @@
 // Dependencies
 const router = require('express').Router();
 const apiRoutes = require('./api');
-const homeRoutes = require('./home-routes.js');
-const dashboardRoutes = require('./dashboard-routes.js')
+const homeRoutes = require('./home-routes');
+const dashboardRoutes = require('./dashboard-routes')
 
 // Define the server path for API routes to use.
 router.use('/', homeRoutes);

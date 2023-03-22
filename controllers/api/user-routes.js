@@ -65,7 +65,8 @@ router.post('/', async (req, res) => {
                 .json({ message: `Your post has been created! ${userData.username}` });
         });
     } catch (err) {
-        res.status(400).json(err);
+        console.log(err)
+        res.status(400).json(err);        
     }
 });
 

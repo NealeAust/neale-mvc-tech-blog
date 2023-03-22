@@ -5,7 +5,7 @@ async function loginFormHandler(event) {
     console.log('login handler function engaged');
 
     // Get information entered in login form.
-    const name = document.querySelector('#username-login').value.trim();
+    const username = document.querySelector('#username-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
     console.log(name);
