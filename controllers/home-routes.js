@@ -34,7 +34,7 @@ router.get('/', (req, res) => {
         const posts = postData.map(post => post.get({ plain: true }));
         res.render('homepage', {
             posts,
-            loggedIn: req.session.loggedIn
+            logged_in: req.session.logged_in
         });
     })
         .catch(err => {
@@ -78,7 +78,7 @@ router.get('/post/:id', (req, res) => {
             const post = postData.get({ plain: true });
             res.render('single-post', {
                 post,
-                loggedIn: req.session.loggedIn
+                logged_in: req.session.logged
             });
         })
         .catch(err => {
@@ -89,7 +89,7 @@ router.get('/post/:id', (req, res) => {
 
 //  Upon login redirect to the home page.
 router.get('/login', (req, res) => {
-    if (req.session.loggedIn) {
+    if (req.session.logged_in) {
         res.redirect('/');
         return;
     }
@@ -98,7 +98,7 @@ router.get('/login', (req, res) => {
 
 // Upon successful sign-up redirect to the home page.
 router.get('/signup', (req, res) => {
-    if (req.session.loggedIn) {
+    if (req.session.logged_in) {
         res.redirect('/');
         return;
     }
