@@ -1,6 +1,6 @@
 <article>
 {{!-- Note: '&larr' means leftwards arrow--}} 
-<a href"/dashboard"> &larr; Back to dashboard</a>
+<a href="/dashboard"> &larr; Back to dashboard</a>
 <h2>
   Edit Post
 </h2>
@@ -30,8 +30,10 @@ Created by you on {{format_date post.created_at}}
 </div>
 </form>
 
-{{> comments post.comments}}
+{{> comment post.comments}}
 
-<script src="./js/edit-post.js"></script>
-<script src="./js/delete-post.js"></script>
-<script src="./js/comment.js"></script>
+<script src="/js/comment.js"></script>
+<script src="/js/delete-post.js"></script>
+<script src="/js/edit-post.js"></script>
+
+
