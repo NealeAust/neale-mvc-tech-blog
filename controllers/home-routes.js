@@ -76,7 +76,7 @@ router.get('/post/:id', (req, res) => {
                 return;
             }
             const post = postData.get({ plain: true });
-            res.render('single-post', {
+            res.render('post', {
                 post,
                 logged_in: req.session.logged
             });

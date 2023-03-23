@@ -69,8 +69,7 @@ router.post('/', withAuth, async (req, res) => {
     const newPost = await Post.create({
       ...req.body,
       // title: req.body.title,
-      // content: req.body.content,
-      user_id: req.session.user_id,
+     user_id: req.session.user_id,
     });
 
     res.status(200).json(newPost);
