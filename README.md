@@ -7,7 +7,7 @@
 To build both the back-end and front-end of a Content Management Sytem (CMS) style blog web site, where developers can publish their blog posts 
 and comment on othr developers' posts as well. Once built the application is to be deployed to Heroku.
 
-The application will use Handlebars.js as the templating language, and utilise Sequelize, expression-session npm and range of other packages. 
+The application will use Handlebars.js as the templating language, and utilise Sequelize, expression-session npm and a range of other packages. 
 Will have built-in security protocols, including a hash password
 
 ## Packages Used
@@ -62,7 +62,7 @@ Upon successfully entering these commands the sentence **"App listening on port 
 
 At this point the user either navigates to insomnia or the web browser and enters "localhost:3001", then presses send or enter based on which application.
 
-When the user visists the web MVC Tech Blog application they are taken directly to the homepage window that has a list of all blogs added, which appear in decending order (most recent first). The user then has the option to login (or signup). Once successfully logged in the application navigates to the dashboard window (page) where they able to create a post.  Once the post is created the user simply selects the relevant menu option to edit, comment on or even delete a post.
+When the user visits the web **MVC Tech Blog** application they are taken directly to the homepage window that has a list of all blogs added, which appear in decending order (most recent first). The user then has the option to login (or signup). Once successfully logged in the application navigates to the dashboard window (page) where the user able to create a post.  Once the post is created the user simply selects the relevant menu option to edit, comment on or even delete a post.
 
 ## Deployed Application and Screenshots
 
