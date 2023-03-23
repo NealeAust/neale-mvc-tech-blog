@@ -55,7 +55,7 @@ To access the MVC Tech Blog web application homepage at the command-line the fol
 - Enter password
 - USE tech_blog_db
 - quit or \n to leave 'sql'
-- npm run seeds
+- npm run seed
 - node server.js
 
 Upon successfully entering these commands the sentence **"App listening on port 3001!"** is displayed.
