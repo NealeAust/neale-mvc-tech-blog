@@ -3,13 +3,13 @@ const { Post } = require('../models');
 const postData = [
     {
         title: "Superhero Smackdown",
-        post_text: "A browser-based frontend application showcasing Marvel Superheros in battle, displaying the winner and a battle history.",
+        post_text: "A browser-based frontend application showcasing Marvel Superheroes in battle, displaying the winner and a battle history.",
         user_id: 1,
     },
     {
         title: "MixMate",
         post_text: "A music playlist creation and sharing platform web application.",
-        user_id: 4,
+        user_id: 1,
     },
     {
         title: "Note Taker",
